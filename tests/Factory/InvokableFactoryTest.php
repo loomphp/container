@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace LoomTest\Container\Factory;
 
 use Loom\Container\Factory\InvokableFactory;
-use LoomTest\Container\TestAsset\InvokableObject;
+use LoomTest\Container\TestAsset\FlashMemory;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
 
@@ -17,9 +17,9 @@ class InvokableFactoryTest extends TestCase
             ->getMock();
         $factory   = new InvokableFactory();
 
-        $object = $factory($container, InvokableObject::class, ['foo' => 'bar']);
+        $object = $factory($container, FlashMemory::class, ['foo' => 'bar']);
 
-        $this->assertInstanceOf(InvokableObject::class, $object);
+        $this->assertInstanceOf(FlashMemory::class, $object);
         $this->assertEquals(['foo' => 'bar'], $object->options);
     }
 }

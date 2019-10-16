@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file.
 - Nothing
 
 ### Changed
-- Nothing
+- Rename `setInvokableClass` method to `setInvokable`
 
 ### Deprecated
 - Nothing

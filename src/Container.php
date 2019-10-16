@@ -78,7 +78,7 @@ class Container implements ContainerInterface
         $this->add(['aliases' => [$alias => $target]]);
     }
 
-    public function setInvokableClass($id, $class = null): void
+    public function setInvokable($id, $class = null): void
     {
         $this->add(['invokables' => [$id => $class ?: $id]]);
     }

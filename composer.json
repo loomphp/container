@@ -52,8 +52,8 @@
             "@check-style",
             "@test"
         ],
-        "check-style": "phpcs src test",
-        "fix-style": "phpcbf src test",
+        "check-style": "phpcs src tests",
+        "fix-style": "phpcbf src tests",
         "test": "phpunit --colors=always",
         "test-coverage": "phpunit --colors=always --coverage-clover clover.xml"
     }

@@ -347,7 +347,7 @@ class ContainerTest extends TestCase
     public function testCanInjectInvokables()
     {
         $container = $this->createContainer();
-        $container->setInvokableClass('foo', FlashMemory::class);
+        $container->setInvokable('foo', FlashMemory::class);
         $this->assertTrue($container->has('foo'));
         $this->assertTrue($container->has(FlashMemory::class));
         $foo = $container->get('foo');
